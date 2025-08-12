@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel Choices - Discover Cambodia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-pink: #5c5286; /* A soft pink */
+            --dark-pink: #E9967A; /* A darker shade for accents */
+            --teal-logo: #115151; /* The color from your logo */
+            --light-bg: #d4cfcf; /* Off-white for background */
+            --white: #e7f0ef;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+        }
+        .hero-section {
+            position: relative;
+            color: var(--white);
+            padding: 10rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6); /* Adjust brightness to make text more readable */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: var(--teal-logo);
+            border-color: var(--teal-logo);
+            color: var(--white);
+        }
+        .btn-custom:hover {
+            background-color: #2a8080;
+            border-color: #2a8080;
+            color: var(--white);
+        }
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+        }
+        .navbar-custom {
+            background-color: var(--teal-logo);
+        }
+        .nav-link, .navbar-brand {
+            color: var(--white) !important;
+        }
+        .nav-link:hover {
+            color: var(--dark-pink) !important;
+        }
+        .card {
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            background-color: var(--white);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .section-title {
+            font-weight: 700;
+            color: var(--teal-logo);
+            margin-bottom: 2rem;
+        }
+        .list-group-item {
+            border: none;
+            padding-left: 0;
+            background-color: transparent;
+        }
+        .qr-code-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .social-links a {
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            color: var(--white);
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: var(--dark-pink);
+        }
+        .bg-pink-light {
+            background-color: var(--primary-pink);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo1.jpg" alt="Smart Travel Choices Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#details">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <!-- Background Image using <img> tag -->
+        <div class="hero-image-container">
+            <img src="pic.jpg" alt="Sunrise over Angkor Wat in Cambodia" class="hero-image">
+        </div>
+        <div class="container hero-content">
+            <h1 class="display-3 fw-bold mb-3">Discover Cambodia with Smart Travel Choices</h1>
+            <p class="lead mb-4">With Heart, History & Hospitality</p>
+            <a href="#packages" class="btn btn-custom btn-lg rounded-pill px-4">Explore Tours</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">🌟 Smart Travel Choices</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h3>Founded by Vuthy Nou (Mr. TEA)</h3>
+                    <p>Smart Travel Choices is a family-run tour service built on passion, storytelling, and a deep love for Cambodia. With decades of experience and a background in education, Mr. TEA offers travelers more than just sightseeing—he delivers meaningful journeys through Cambodia’s rich history, vibrant culture, and resilient spirit.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3>👨‍🏫 From Classroom to Culture Guide</h3>
+                    <p>Mr. TEA began his career as a teacher, sharing English and Mandarin with students in rural Cambodia. His love for learning naturally evolved into guiding, where he now holds dual licenses for Siem Reap and Phnom Penh. Every tour is infused with personal stories, historical depth, and a teacher’s touch—making each moment unforgettable.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3>🇰� A Witness to Cambodia’s Transformation</h3>
+                    <p>Having lived through the Post Khmer Rouge era, the Vietnamese occupation, and Cambodia’s rebirth as a democratic kingdom, Mr. TEA offers rare insight into the country’s journey. His tours reflect the resilience of the Cambodian people and the beauty of a nation that has risen from its past.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3>👨‍👩‍👧‍👦 A Family That Guides Together</h3>
+                    <p>Together with his wife Huch, also a licensed guide, Mr. TEA shares his passion for Cambodia with travelers from around the world. They are proud parents to three children—Neon, Garnet, and Emerald—and lovingly raise two nieces, Nita and Vichra, ensuring they receive education and opportunity in Phnom Penh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Packages Section -->
+    <section id="packages" class="py-5 bg-pink-light">
+        <div class="container">
+            <h2 class="text-center section-title">Tour Packages</h2>
+            <div class="row g-4">
+                <!-- Package 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="packed1.jpg" class="card-img-top" alt="Placeholder image for Phnom Penh Discoveries">
+                        <div class="card-body">
+                            <h5 class="card-title">Phnom Penh Discoveries</h5>
+                            <p class="card-text"><strong>8 hrs</strong> | from <strong>30$</strong></p>
+                            <p class="card-text">Explore Cambodia’s Royal family, Khmer art collections, Central Market & Wat Phnom.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="packed2.jpg" class="card-img-top" alt="Modern History of Cambodia">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern History of Cambodia</h5>
+                            <p class="card-text"><strong>8 hrs</strong> | from <strong>30$</strong></p>
+                            <p class="card-text">Visit recent and powerful sites like the S-21 Genocide Museum and the Killing fields.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="packed3.jpg" class="card-img-top" alt="Architecture Tour – French Quarter">
+                        <div class="card-body">
+                            <h5 class="card-title">Architecture Tour – French Quarter</h5>
+                            <p class="card-text"><strong>6 hrs</strong> | from <strong>40$</strong></p>
+                            <p class="card-text">Discover French & Khmer architecture with a guide, including the Post Office and Indochina Bank.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="packed4.jpg" class="card-img-top" alt="Cooking & Lunch with Local Family">
+                        <div class="card-body">
+                            <h5 class="card-title">Cooking & Lunch with Local Family</h5>
+                            <p class="card-text"><strong>8 hrs</strong> | from <strong>30$</strong></p>
+                            <p class="card-text">An authentic experience: explore a market, cook, and have lunch at a local home.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="packed5.jpg" class="card-img-top" alt="Sunset Mekong Cruise, Food Tour & Night-life">
+                        <div class="card-body">
+                            <h5 class="card-title">Sunset Mekong Cruise, Food Tour & Night-life</h5>
+                            <p class="card-text"><strong>6 hrs</strong> | from <strong>40$</strong></p>
+                            <p class="card-text">Enjoy a sunset cruise, food tasting, and night-life exploration with a guide.</p>
+                            </div>
+                    </div>
+                </div>
+                <!-- Package 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="packed6.jpg" class="card-img-top" alt="Placeholder image for Koh Dach Silk Island">
+                        <div class="card-body">
+                            <h5 class="card-title">Koh Dach Silk Island</h5>
+                            <p class="card-text"><strong>8 hrs</strong> | No pricing listed</p>
+                            <p class="card-text">Cross the Mekong rivers and learn from local people how silk fabric is woven.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="packed7.jpg" class="card-img-top" alt="Udong Mountain & Meditation Center">
+                        <div class="card-body">
+                            <h5 class="card-title">Udong Mountain & Meditation Center</h5>
+                            <p class="card-text"><strong>8 hrs</strong> | No pricing listed</p>
+                            <p class="card-text">Hike up Udong Mountain for a panoramic view and visit a Theravada Buddhism center.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="packed8.jpg" class="card-img-top" alt="Discovery 1st Capital of Cambodia">
+                        <div class="card-body">
+                            <h5 class="card-title">Discovery 1st Capital of Cambodia</h5>
+                            <p class="card-text"><strong>8 hrs</strong> | No pricing listed</p>
+                            <p class="card-text">Explore ancient ruins and a 10th-century Hindu temple in the first capital of Cambodia.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 9 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Transportation Service</h5>
+                            <p class="card-text">Car only | from <strong>50$</strong></p>
+                            <p class="card-text">Daily, Weekly, Monthly, Semesterly, Quarterly & Annually Car Rental service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Details Section -->
+    <section id="details" class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title">What's Included & Excluded</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>What's Included?</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>Shared Transportation</li>
+                                <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>Water and Towel</li>
+                                <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>Tour Guide</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Exclusions</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i>Food & drinks</li>
+                                <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i>Lunch and other snacks</li>
+                                <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i>Personal Expense</li>
+                                <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i>All entrance tickets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Please Note</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>Public transportation nearby</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>Infants must sit on your lap</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>Passport required</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>Not wheelchair or stroller accessible</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>Not suitable for pets</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>Infant seats unavailable</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>Not recommended for people with heart conditions</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>This particular tour offers two distinct options: a small group tour and a private tour.</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>If there are only 2 participants, the tour will use a Tuk Tuk.</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>Please check your inbox and spam folder for tour confirmation.</li>
+                        <li class="list-group-item"><i class="fas fa-info-circle text-primary me-2"></i>Pickup will be at the hotel's lobby including hotels only in the downtown area. Any pickup location outside downtown requires a USD 20 per group paid directly to the driver.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Payment Section -->
+    <section id="payment" class="py-5 bg-pink-light">
+        <div class="container">
+            <h2 class="text-center section-title">Payment Information</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <p class="lead">Hi! Here are my ABA account details:</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Account-holder name:</strong> NOU V. & THONG S.</li>
+                        <li><strong>Account number:</strong> 006 453 421</li>
+                    </ul>
+                    <a href="https://pay.ababank.com/aMArQDh45HZHZWM48" class="btn btn-custom btn-lg mt-3" target="_blank">Send Payment via ABA Link</a>
+                </div>
+                <div class="col-lg-6 text-center qr-code-section">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <!-- ABA Pay QR Code -->
+                            <img src="aba.jpg" alt="ABA Pay QR Code" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                             <!-- Placeholder for second QR code, as the provided image is not an ABA code. -->
+                            <img src="b.jpg" alt="Binance QR Code" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p><strong>Connect with us:</strong></p>
+            <div class="social-links mb-3">
+                <a href="https://wa.me/85566960666" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://web.facebook.com/photo/?fbid=122104338392896255&set=a.122104337618896255" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>📅 Book your tour today. Share the journey. Recommend to friends and family.</p>
+            <p class="mb-0">© 2024 Smart Travel Choices. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
